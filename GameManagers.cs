@@ -3,11 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManagers : MonoBehaviour
 {
+    [SerializeField] private GameObject _complateLevelUI;
+
     private bool _gameHasEnded = false;
-
     private float _restartDelay = 1f;
-
-    private GameObject _complateLevelUI;
 
     public void CompleteLevel()
     {

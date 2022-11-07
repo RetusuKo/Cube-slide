@@ -17,7 +17,7 @@ public class LevelGenerrator : MonoBehaviour
         int startingSpawnLevelParts = 5;
         for (int i = 0; i < startingSpawnLevelParts; i++)
         {
-          SpawnLevelPart();
+            SpawnLevelPart();
         }
     }
     private void Update()

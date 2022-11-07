@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EndTrrigger : MonoBehaviour
 {
-    private GameManagers _gameManager;
-    void OnTriggerEnter()
+    private void OnTriggerEnter(Collider collider)
     {
-        _gameManager.CompleteLevel();
+        if(collider.tag == "Player")
+            FindObjectOfType<GameManagers>().CompleteLevel();
     }
 }
